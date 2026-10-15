@@ -1500,9 +1500,7 @@
       }
     ];
 
-    // Default initial blessings
     // RSVP and Wishes section removed as requested
-    }
 
     // Countdown Timer to Nov 15, 2026 18:30:00 IST
     function updateCountdown() {
@@ -1811,11 +1809,23 @@
           curtainOverlay.style.display = "none";
         }, 1200);
       }
+      const triggerCurtainOpen = (e) => {
+        if (e && e.stopPropagation) e.stopPropagation();
+        openRoyalCurtain(true);
+        triggerFlowerShower();
+      };
       if (openCurtainBtn) {
-        openCurtainBtn.addEventListener("click", () => {
-          openRoyalCurtain(true);
-          triggerFlowerShower();
-        });
+        openCurtainBtn.addEventListener("click", triggerCurtainOpen);
+        openCurtainBtn.addEventListener("touchend", triggerCurtainOpen);
+      }
+      const openCurtainLabel = document.getElementById("openCurtainLabel");
+      if (openCurtainLabel) {
+        openCurtainLabel.style.cursor = "pointer";
+        openCurtainLabel.addEventListener("click", triggerCurtainOpen);
+        openCurtainLabel.addEventListener("touchend", triggerCurtainOpen);
+      }
+      if (envelopeCardCenter) {
+        envelopeCardCenter.addEventListener("click", triggerCurtainOpen);
       }
       setTimeout(() => openRoyalCurtain(false), 1100);
 

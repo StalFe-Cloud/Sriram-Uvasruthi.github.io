@@ -869,7 +869,7 @@
               Bride's Side (மணமகள் வீட்டார்)
             </button>
             <button type="button" data-fam-filter="hosts" class="fam-tab-btn px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold text-maroon-900 hover:bg-maroon-800/10 transition-all">
-              Host Contacts (இரு இல்ல அழைப்பு)
+              Welcoming Hosts (இரு இல்ல அழைப்பு)
             </button>
           </div>
 
@@ -1204,7 +1204,7 @@
         tabAll: "All Family",
         tabGroom: "Groom's Side",
         tabBride: "Bride's Side",
-        tabHosts: "Host Contacts",
+        tabHosts: "Welcoming Hosts",
         searchPlaceholder: "Search name, company, relation...",
         venueBadge: "Reception Venue & Directions",
         venueMainHeading: "SMR Thirumana Mandapam",
@@ -1378,8 +1378,7 @@
           "செல்வி. M.S. மிருனாளி",
           "ஸ்ரீ அமிர்தம் மில்க் புராடக்ட், நியூட்ரோ மவுண்ட் மில்க் பன்னீர்",
           "ரங்கே கவுடர் வீதி, கோவை - 1"
-        ],
-        phones: ["98422 38767"]
+        ]
       },
       {
         id: "hosts-groom",
@@ -1407,8 +1406,7 @@
           "செல்வன். R. அஸ்வின் ME., (StalFe Pvt Ltd.,)",
           "செல்வன். S. ஆகாஷ் BE, MBA., செல்வி. S. சுஹிதா B.Com (CA).,",
           "சேடன் தோட்டம், கவுண்டம்பாளையம், கோவை"
-        ],
-        phones: ["93452 11666", "97900 28669"]
+        ]
       },
       {
         id: "groom-grandmother",
@@ -1699,8 +1697,7 @@
           group.titleEn,
           group.titleTa,
           ...group.membersEn,
-          ...group.membersTa,
-          ...(group.phones || [])
+          ...group.membersTa
         ].join(" ").toLowerCase();
         return haystack.includes(q);
       });
@@ -1724,22 +1721,6 @@
             ? "bg-emerald-800/15 text-emerald-900 border border-emerald-800/30"
             : "bg-gold-400/25 text-maroon-900 border border-gold-500/40";
 
-        const phoneHtml = (group.phones && group.phones.length > 0)
-          ? `
-            <div class="mt-4 pt-3 border-t border-gold-500/30 flex flex-wrap items-center gap-2">
-              <span class="text-xs font-bold text-maroon-800">${currentLang === "en" ? "📞 Contact:" : "📞 செல்:"}</span>
-              ${group.phones.map(ph => `
-                <a href="tel:+91${ph.replace(/\\s+/g, '')}" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-parchment hover:bg-gold-400/25 text-maroon-900 border border-gold-500/40 text-xs font-semibold transition-colors">
-                  ${ph}
-                </a>
-                <button type="button" data-copy-phone="${ph}" class="copy-phone-btn px-2 py-1 rounded-lg bg-ivory hover:bg-parchment text-stone-600 border border-gold-500/30 text-[11px]" title="Copy Phone">
-                  📋
-                </button>
-              `).join("")}
-            </div>
-          `
-          : "";
-
         return `
           <div class="bg-ivory ornate-border rounded-2xl p-5 flex flex-col justify-between">
             <div>
@@ -1753,18 +1734,9 @@
                 ${members.map(m => `<li class="flex items-start gap-2"><span class="text-gold-600 mt-0.5">•</span><span>${m}</span></li>`).join("")}
               </ul>
             </div>
-            ${phoneHtml}
           </div>
         `;
       }).join("");
-
-      // Attach copy phone listeners
-      container.querySelectorAll(".copy-phone-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-          const ph = btn.getAttribute("data-copy-phone");
-          copyTextToClipboard(ph, currentLang === "en" ? `Copied phone: ${ph}` : `தொலைபேசி எண் நகலெடுக்கப்பட்டது: ${ph}`);
-        });
-      });
     }
 
     // Render Wishes List & Lake Como Letters Live Marquee

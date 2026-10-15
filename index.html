@@ -297,12 +297,11 @@
         <a href="#scheduleSection" id="navLinkSchedule" class="hover:text-maroon-800 transition-colors">Nov 15 Reception</a>
         <a href="#familySection" id="navLinkFamily" class="hover:text-maroon-800 transition-colors">Family &amp; Hosts</a>
         <a href="#venueSection" id="navLinkVenue" class="hover:text-maroon-800 transition-colors">Venue &amp; Map</a>
-        <a href="#rsvpSection" id="navLinkRsvp" class="hover:text-maroon-800 transition-colors">RSVP &amp; Wishes</a>
-      </nav>
+        </nav>
 
       <!-- Action Controls: Language Toggle & Flower Shower -->
       <div class="flex items-center gap-2 sm:gap-3">
-        <button id="musicToggleBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs sm:text-sm font-medium bg-parchment hover:bg-gold-400/20 text-maroon-800 border border-gold-500/40 transition-all shadow-sm" title="Toggle Auspicious Mangala Chimes">
+        <button id="musicToggleBtn" type="button" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs sm:text-sm font-semibold bg-gold-400/30 text-maroon-900 border border-gold-500 transition-all shadow-sm cursor-pointer" title="Music Default ON • Click to turn OFF">
           <span id="musicBtnIcon">🎵</span>
           <span id="musicBtnLabel" class="hidden md:inline">Mangala Chimes</span>
         </button>
@@ -334,12 +333,11 @@
     <!-- Mobile Collapsible Menu -->
     <div id="mobileMenuPanel" class="hidden lg:hidden bg-parchment border-t border-gold-500/30 px-4 py-3 space-y-2 text-sm font-medium">
       <div class="grid grid-cols-2 gap-2">
-        <a href="#invitationSection" id="mobLinkInvite" class="mobile-nav-link px-3 py-2 rounded-lg bg-ivory/80 text-maroon-900 hover:bg-gold-400/20">Invitation</a>
-        <a href="#coupleSection" id="mobLinkCouple" class="mobile-nav-link px-3 py-2 rounded-lg bg-ivory/80 text-maroon-900 hover:bg-gold-400/20">The Couple</a>
-        <a href="#scheduleSection" id="mobLinkSchedule" class="mobile-nav-link px-3 py-2 rounded-lg bg-ivory/80 text-maroon-900 hover:bg-gold-400/20">Nov 15 Reception</a>
-        <a href="#familySection" id="mobLinkFamily" class="mobile-nav-link px-3 py-2 rounded-lg bg-ivory/80 text-maroon-900 hover:bg-gold-400/20">Family &amp; Hosts</a>
-        <a href="#venueSection" id="mobLinkVenue" class="mobile-nav-link px-3 py-2 rounded-lg bg-ivory/80 text-maroon-900 hover:bg-gold-400/20">Venue &amp; Map</a>
-        <a href="#rsvpSection" id="mobLinkRsvp" class="mobile-nav-link px-3 py-2 rounded-lg bg-ivory/80 text-maroon-900 hover:bg-gold-400/20">RSVP &amp; Wishes</a>
+        <a href="#invitationSection" id="mobLinkInvite" class="mobile-nav-link px-3 py-2.5 rounded-xl bg-ivory/90 text-maroon-900 hover:bg-gold-400/20 font-medium text-center border border-gold-500/20 shadow-sm">Invitation</a>
+        <a href="#coupleSection" id="mobLinkCouple" class="mobile-nav-link px-3 py-2.5 rounded-xl bg-ivory/90 text-maroon-900 hover:bg-gold-400/20 font-medium text-center border border-gold-500/20 shadow-sm">The Couple</a>
+        <a href="#scheduleSection" id="mobLinkSchedule" class="mobile-nav-link px-3 py-2.5 rounded-xl bg-ivory/90 text-maroon-900 hover:bg-gold-400/20 font-medium text-center border border-gold-500/20 shadow-sm">Nov 15 Reception</a>
+        <a href="#familySection" id="mobLinkFamily" class="mobile-nav-link px-3 py-2.5 rounded-xl bg-ivory/90 text-maroon-900 hover:bg-gold-400/20 font-medium text-center border border-gold-500/20 shadow-sm">Family &amp; Hosts</a>
+        <a href="#venueSection" id="mobLinkVenue" class="mobile-nav-link col-span-2 text-center px-3 py-2.5 rounded-xl bg-maroon-800 text-ivory hover:bg-maroon-700 font-semibold shadow-sm">📍 Venue &amp; Map (SMR Mandapam)</a>
       </div>
     </div>
   </header>
@@ -378,10 +376,6 @@
                 Sriram <span class="text-gold-400 font-normal italic">&amp;</span> Uvasruthi
               </h1>
             </div>
-
-            <p id="heroCredentials" class="text-xs sm:text-sm text-ivory/85 mt-2 max-w-xl">
-              R. Sriram, B.E., M.S. (France) — StålFe SAS (Paris) &nbsp;•&nbsp; M.S. Uvasruthi, BAMS (Ayu)
-            </p>
 
             <!-- Reception Date & Time Highlight Box -->
             <div class="mt-5 bg-ivory/95 text-maroon-900 rounded-2xl px-5 sm:px-8 py-3.5 shadow-xl border border-gold-400 max-w-2xl w-full">
@@ -667,8 +661,38 @@
                   StålFe SAS — Paris, France
                 </p>
               </div>
-              <div class="w-12 h-12 rounded-full bg-gold-400/20 border border-gold-500 flex items-center justify-center text-xl shrink-0">
-                🤵🏽
+              <div class="w-12 h-12 rounded-full bg-gold-400/20 border border-gold-500 flex items-center justify-center shrink-0 p-1">
+                <svg class="w-8 h-8 drop-shadow-sm" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Hindu Groom (மணமகன்)">
+                  <!-- Golden Peta / Turban -->
+                  <path d="M18 26C18 16 24 10 32 10C40 10 46 16 46 26C46 28 44 30 42 31C38 32 26 32 22 31C20 30 18 28 18 26Z" fill="#C59B27"/>
+                  <path d="M22 17C26 12 38 12 42 17C44 20 44 24 43 26C39 24 25 24 21 26C20 24 20 20 22 17Z" fill="#D4AF37"/>
+                  <circle cx="32" cy="14" r="2.5" fill="#7C1D26"/>
+                  <path d="M32 9L34 13H30L32 9Z" fill="#FDF8EC"/>
+                  <!-- Groom Face -->
+                  <path d="M22 28C22 28 22 41 32 41C42 41 42 28 42 28Z" fill="#E8B88A"/>
+                  <!-- Ears & Kundan Earrings -->
+                  <circle cx="20.5" cy="32" r="2" fill="#E8B88A"/>
+                  <circle cx="43.5" cy="32" r="2" fill="#E8B88A"/>
+                  <circle cx="20.5" cy="33.5" r="1" fill="#D4AF37"/>
+                  <circle cx="43.5" cy="33.5" r="1" fill="#D4AF37"/>
+                  <!-- Sacred Thiruneeru / Sandanam & Kumkum Tilak -->
+                  <path d="M28 26H36" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+                  <path d="M28.5 28H35.5" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+                  <circle cx="32" cy="27" r="1" fill="#991B1B"/>
+                  <!-- Eyes, Eyebrows & Gentle Smile -->
+                  <path d="M25 29Q27 28 29 29" stroke="#3B1F1E" stroke-width="1.1" stroke-linecap="round"/>
+                  <path d="M35 29Q37 28 39 29" stroke="#3B1F1E" stroke-width="1.1" stroke-linecap="round"/>
+                  <circle cx="27" cy="32" r="1.1" fill="#2E1814"/>
+                  <circle cx="37" cy="32" r="1.1" fill="#2E1814"/>
+                  <path d="M29 36Q32 38 35 36" stroke="#7C1D26" stroke-width="1.2" stroke-linecap="round"/>
+                  <!-- Traditional Silk Angavastram with Gold Zari -->
+                  <path d="M18 54C18 45 23 42 32 42C41 42 46 45 46 54V56H18V54Z" fill="#FDF8EC"/>
+                  <path d="M21 42L32 56L37 56L24 42H21Z" fill="#D4AF37"/>
+                  <path d="M43 42L32 56L27 56L40 42H43Z" fill="#D4AF37"/>
+                  <!-- Rose Wedding Garland (கல்யாண மாலை) -->
+                  <path d="M24 42Q32 49 40 42" stroke="#B91C1C" stroke-width="3" stroke-linecap="round"/>
+                  <circle cx="32" cy="47" r="2" fill="#D4AF37"/>
+                </svg>
               </div>
             </div>
 
@@ -710,8 +734,38 @@
                   Bachelor of Ayurvedic Medicine &amp; Surgery
                 </p>
               </div>
-              <div class="w-12 h-12 rounded-full bg-gold-400/20 border border-gold-500 flex items-center justify-center text-xl shrink-0">
-                👰🏽
+              <div class="w-12 h-12 rounded-full bg-gold-400/20 border border-gold-500 flex items-center justify-center shrink-0 p-1">
+                <svg class="w-8 h-8 drop-shadow-sm" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Hindu Bride (மணமகள்)">
+                  <!-- Fragrant Jasmine Flowers (மல்லிகைப் பூ) in Hair -->
+                  <ellipse cx="32" cy="23" rx="14" ry="12" fill="#2E1814"/>
+                  <path d="M19 22C19 16 23 11 32 11C41 11 45 16 45 22" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="2 3"/>
+                  <path d="M17 26C17 19 23 14 32 14C41 14 47 19 47 26" stroke="#FEF08A" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 3"/>
+                  <!-- Bride Face -->
+                  <path d="M23 27C23 27 23 40 32 40C41 40 41 27 41 27Z" fill="#E8B88A"/>
+                  <!-- Golden Maang Tikka / Nethichutti with Kemp Stone -->
+                  <path d="M32 14V23" stroke="#D4AF37" stroke-width="1.3"/>
+                  <circle cx="32" cy="24" r="2" fill="#D4AF37"/>
+                  <circle cx="32" cy="24" r="1" fill="#991B1B"/>
+                  <!-- Red Kumkum Bindi (பொட்டு) -->
+                  <circle cx="32" cy="28" r="1.3" fill="#991B1B"/>
+                  <!-- Elegant Eyes with Kohl/Kajal & Smile -->
+                  <path d="M25 29Q27 28 29 29.5" stroke="#2E1814" stroke-width="1.1" stroke-linecap="round"/>
+                  <path d="M35 29.5Q37 28 39 29" stroke="#2E1814" stroke-width="1.1" stroke-linecap="round"/>
+                  <ellipse cx="27" cy="32" rx="1.3" ry="1" fill="#2E1814"/>
+                  <ellipse cx="37" cy="32" rx="1.3" ry="1" fill="#2E1814"/>
+                  <path d="M29 36Q32 38 35 36" stroke="#991B1B" stroke-width="1.3" stroke-linecap="round"/>
+                  <circle cx="28.5" cy="33" r="0.8" fill="#D4AF37"/> <!-- Nath/Nose Stud -->
+                  <!-- Golden Jhumkas (ஜிமிக்கி) -->
+                  <path d="M20 33L22 36H18L20 33Z" fill="#D4AF37"/>
+                  <path d="M44 33L46 36H42L44 33Z" fill="#D4AF37"/>
+                  <!-- Kanchipuram Silk Bridal Saree (கூறைப் பட்டு) with Gold Zari -->
+                  <path d="M18 54C18 45 23 41 32 41C41 41 46 45 46 54V56H18V54Z" fill="#7C1D26"/>
+                  <path d="M23 41L32 56L36 56L26 41H23Z" fill="#D4AF37"/>
+                  <!-- Auspicious Mangalsutra / Thali & Bridal Garland -->
+                  <path d="M26 41Q32 47 38 41" stroke="#D4AF37" stroke-width="1.5" fill="none"/>
+                  <circle cx="32" cy="44.5" r="1.5" fill="#D4AF37"/>
+                  <path d="M24 43Q32 50 40 43" stroke="#B91C1C" stroke-width="2.5" stroke-linecap="round"/>
+                </svg>
               </div>
             </div>
 
@@ -945,127 +999,7 @@
       </div>
     </section>
 
-    <!-- Guest RSVP & Blessings Wall Section -->
-    <section id="rsvpSection" class="py-12 px-4 bg-parchment/60 border-t border-gold-500/30">
-      <div class="max-w-5xl mx-auto">
-        <div class="text-center max-w-2xl mx-auto mb-8">
-          <span id="rsvpSectionTag" class="text-xs font-bold uppercase tracking-widest text-maroon-700">Nov 15 Reception Attendance &amp; Wishes</span>
-          <h2 id="rsvpSectionTitle" class="font-display text-3xl sm:text-4xl font-bold text-maroon-900 mt-1">
-            Confirm Your Presence &amp; Bless the Couple
-          </h2>
-          <p id="rsvpSectionSub" class="text-xs sm:text-sm text-stone-600 mt-1">
-            Let our families know you are joining us for the November 15th Marriage Reception and leave a warm blessing for Sriram &amp; Uvasruthi
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
-          <!-- RSVP Form -->
-          <form id="rsvpForm" class="lg:col-span-6 bg-ivory ornate-border rounded-2xl p-6 space-y-4">
-            <div class="border-b border-gold-500/30 pb-3">
-              <span class="text-[11px] font-bold uppercase tracking-[0.2em] text-maroon-700">Your Presence Is Our Present</span>
-              <h3 id="rsvpFormHeading" class="font-display text-2xl font-bold text-maroon-900 mt-0.5">
-                Will You Join Us? • RSVP &amp; Blessing
-              </h3>
-            </div>
-
-            <!-- Lake Como Letters Inspired Attendance Response Pills -->
-            <div>
-              <label class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1.5">How would you like to RSVP?</label>
-              <div class="grid grid-cols-3 gap-2" role="group" aria-label="RSVP Response Choice">
-                <button type="button" data-rsvp-status="Yes, Joyfully Attending" class="rsvp-choice-btn p-2.5 rounded-xl border-2 border-maroon-800 bg-maroon-800 text-ivory text-left transition-all">
-                  <span class="block text-xs font-bold">✨ Yes</span>
-                  <span class="block text-[10px] opacity-85">Joyfully attending</span>
-                </button>
-                <button type="button" data-rsvp-status="Maybe — Still Confirming" class="rsvp-choice-btn p-2.5 rounded-xl border border-gold-500/40 bg-parchment text-maroon-900 hover:bg-gold-400/20 text-left transition-all">
-                  <span class="block text-xs font-bold">🤍 Maybe</span>
-                  <span class="block text-[10px] text-stone-600">Still confirming</span>
-                </button>
-                <button type="button" data-rsvp-status="Sending Warm Wishes" class="rsvp-choice-btn p-2.5 rounded-xl border border-gold-500/40 bg-parchment text-maroon-900 hover:bg-gold-400/20 text-left transition-all">
-                  <span class="block text-xs font-bold">💌 Sending Love</span>
-                  <span class="block text-[10px] text-stone-600">Blessings from afar</span>
-                </button>
-              </div>
-            </div>
-
-            <div>
-              <label for="guestNameInput" id="labelGuestName" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Your Name &amp; Family *</label>
-              <input id="guestNameInput" type="text" required placeholder="e.g. Ramesh & Family" class="w-full px-3.5 py-2 rounded-xl bg-parchment border border-gold-500/40 text-sm focus:outline-none focus:border-maroon-800" />
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-              <div>
-                <label for="guestCountSelect" id="labelGuestCount" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Number of Guests</label>
-                <select id="guestCountSelect" class="w-full px-3 py-2 rounded-xl bg-parchment border border-gold-500/40 text-sm focus:outline-none focus:border-maroon-800">
-                  <option value="1">1 Guest</option>
-                  <option value="2" selected>2 Guests</option>
-                  <option value="3">3 Guests</option>
-                  <option value="4">4 Guests</option>
-                  <option value="5+">5+ Family Members</option>
-                </select>
-              </div>
-              <div>
-                <label for="guestSideSelect" id="labelGuestSide" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Invited By</label>
-                <select id="guestSideSelect" class="w-full px-3 py-2 rounded-xl bg-parchment border border-gold-500/40 text-sm focus:outline-none focus:border-maroon-800">
-                  <option value="Both Families">Both Families (இரு இல்லம்)</option>
-                  <option value="Groom's Family">Groom's Family (மணமகன் வீட்டார்)</option>
-                  <option value="Bride's Family">Bride's Family (மணமகள் வீட்டார்)</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label for="arrivalWindowSelect" id="labelArrivalTime" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Expected Arrival on Nov 15</label>
-              <select id="arrivalWindowSelect" class="w-full px-3 py-2 rounded-xl bg-parchment border border-gold-500/40 text-sm focus:outline-none focus:border-maroon-800">
-                <option value="6:00 PM (Groom's Welcome)">6:00 PM — Groom's Welcome (மாப்பிள்ளை அழைப்பு)</option>
-                <option value="6:30 PM - 7:30 PM" selected>6:30 PM – 7:30 PM — Early Reception</option>
-                <option value="7:30 PM - 8:30 PM">7:30 PM – 8:30 PM — Evening Reception</option>
-                <option value="8:30 PM - 9:30 PM">8:30 PM – 9:30 PM — Late Evening &amp; Dinner</option>
-              </select>
-            </div>
-
-            <div>
-              <label for="guestWishInput" id="labelGuestWish" class="block text-xs font-bold uppercase tracking-wider text-stone-700 mb-1">Blessings / Wishes for Sriram &amp; Uvasruthi *</label>
-              <textarea id="guestWishInput" rows="3" required placeholder="Wishing Sriram & Uvasruthi a lifetime of love, health, and happiness!" class="w-full px-3.5 py-2 rounded-xl bg-parchment border border-gold-500/40 text-sm focus:outline-none focus:border-maroon-800"></textarea>
-            </div>
-
-            <button type="submit" id="rsvpSubmitBtn" class="w-full py-2.5 px-5 rounded-xl bg-maroon-800 hover:bg-maroon-700 text-ivory font-semibold text-sm shadow-md transition-all">
-              ✨ Submit Reception RSVP &amp; Blessing
-            </button>
-          </form>
-
-          <!-- Live Blessings & Attendance Summary Wall -->
-          <div class="lg:col-span-6 space-y-4">
-            <div class="bg-maroon-900 text-ivory rounded-2xl p-4 sm:p-5 border border-gold-400/50 flex items-center justify-between">
-              <div>
-                <p id="rsvpStatsLabel" class="text-xs uppercase tracking-wider text-gold-400 font-semibold">Reception Wishes Recorded</p>
-                <p id="rsvpStatsSub" class="text-xs text-ivory/80 mt-0.5">Nov 15, 2026 • SMR Thirumana Mandapam</p>
-              </div>
-              <div class="text-right">
-                <span id="totalWishesCount" class="font-display text-3xl font-bold text-gold-400">3</span>
-                <span id="wishesUnitLabel" class="block text-[11px] uppercase tracking-wider text-ivory/80">Blessings</span>
-              </div>
-            </div>
-
-            <!-- Lake Como Letters Inspired LIVE Wishes Marquee Ticker -->
-            <div class="bg-parchment border border-gold-500/40 rounded-xl p-2.5 overflow-hidden">
-              <div class="flex items-center gap-2 mb-1.5 px-1">
-                <span class="inline-flex items-center gap-1 bg-emerald-800 text-ivory text-[10px] font-bold uppercase tracking-widest px-2 py-0.5 rounded-full">
-                  <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-ping"></span>
-                  <span>LIVE</span>
-                </span>
-                <span class="text-xs font-semibold text-maroon-900">Wishes from your guests • வாழ்த்துக்கள்</span>
-              </div>
-              <div class="overflow-hidden relative w-full">
-                <div id="liveWishesMarquee" class="animate-marquee gap-3 text-xs text-stone-700"></div>
-              </div>
-            </div>
-
-            <div id="wishesListContainer" class="space-y-3 max-h-[340px] overflow-y-auto pr-1"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
+</main>
 
   <!-- Footer with Best Compliments from Printed Card -->
   <footer class="bg-maroon-900 text-ivory border-t-2 border-gold-500 py-8 px-4">
@@ -1094,13 +1028,13 @@
   </footer>
 
   <!-- Floating Lake Como Letters Music & Violin Bar -->
-  <div id="floatingMusicBar" class="fixed bottom-4 left-4 z-40 bg-maroon-900/95 text-ivory border-2 border-gold-400/80 rounded-full px-3.5 py-2 shadow-2xl flex items-center gap-2.5 backdrop-blur-md">
-    <button id="floatingMusicToggleBtn" type="button" class="flex items-center gap-2 text-xs font-semibold text-gold-400 hover:text-ivory transition-colors" title="Play / Pause Enclosed Bellagio & Violin Music">
-      <span id="floatingMusicIcon" class="text-base">🎻</span>
-      <span id="floatingMusicStatus" class="max-w-[150px] truncate">Music &amp; Violin</span>
+  <div id="floatingMusicBar" class="fixed bottom-3 left-3 sm:bottom-4 sm:left-4 z-40 bg-maroon-900/95 text-ivory border-2 border-gold-400/80 rounded-full px-3 py-1.5 sm:px-3.5 sm:py-2 shadow-2xl flex items-center gap-2 sm:gap-2.5 backdrop-blur-md max-w-[calc(100vw-24px)] animate-pulse-glow">
+    <button id="floatingMusicToggleBtn" type="button" class="flex items-center gap-1.5 sm:gap-2 text-xs font-semibold text-gold-400 hover:text-ivory transition-colors cursor-pointer" title="Music is ON by default • Click to Pause / Resume">
+      <span id="floatingMusicIcon" class="text-sm sm:text-base animate-bounce">🎻</span>
+      <span id="floatingMusicStatus" class="max-w-[110px] sm:max-w-[160px] truncate">Music is ON</span>
     </button>
-    <span class="h-4 w-px bg-gold-400/40"></span>
-    <button id="floatingViolinSoloBtn" type="button" class="text-[11px] font-bold bg-gold-500/20 hover:bg-gold-500/40 text-gold-400 border border-gold-400/50 px-2.5 py-0.5 rounded-full transition-all" title="Jump to Violin Solo Highlight (02:13)">
+    <span class="h-3.5 w-px bg-gold-400/40"></span>
+    <button id="floatingViolinSoloBtn" type="button" class="text-[10px] sm:text-[11px] font-bold bg-gold-500/20 hover:bg-gold-500/40 text-gold-400 border border-gold-400/50 px-2 sm:px-2.5 py-0.5 rounded-full transition-all whitespace-nowrap cursor-pointer" title="Jump to Violin Solo (02:13)">
       Violin Solo
     </button>
   </div>
@@ -1125,13 +1059,11 @@
         navLinkSchedule: "Nov 15 Reception",
         navLinkFamily: "Family & Hosts",
         navLinkVenue: "Venue & Map",
-        navLinkRsvp: "RSVP & Wishes",
         petalBtnLabel: "Shower Flowers",
         musicBtnLabel: "Violin & Music",
         lightLampBtnLabel: "Play Violin Solo",
         heroBadge: "Marriage Reception Invitation",
         heroCoupleNames: 'Sriram <span class="text-gold-400 font-normal">&amp;</span> Uvasruthi',
-        heroCredentials: "R. Sriram, B.E., M.S. (France) — StålFe SAS (Paris)  •  M.S. Uvasruthi, BAMS (Ayu)",
         heroEventLabel: "Sunday Evening Reception",
         heroDateText: "November 15, 2026",
         heroTimeText: "6:30 PM to 9:30 PM (Groom's Welcome: 6:00 PM)",
@@ -1218,18 +1150,8 @@
         copyShareBtnLabel: "Copy WhatsApp Invite Text",
         qrHeaderLabel: "Scan for Exact Venue Location",
         qrSubNote: "Official QR code from the printed invitation card • Links directly to Google Maps",
-        rsvpSectionTag: "Nov 15 Reception Attendance & Wishes",
-        rsvpSectionTitle: "Confirm Your Presence & Bless the Couple",
-        rsvpSectionSub: "Let our families know you are joining us for the November 15th Marriage Reception and leave a warm blessing for Sriram & Uvasruthi",
-        rsvpFormHeading: "Reception RSVP & Blessing Form",
         labelGuestName: "Your Name & Family *",
-        labelGuestCount: "Number of Guests",
-        labelGuestSide: "Invited By",
-        labelArrivalTime: "Expected Arrival on Nov 15",
         labelGuestWish: "Blessings / Wishes for Sriram & Uvasruthi *",
-        rsvpSubmitBtn: "✨ Submit Reception RSVP & Blessing",
-        rsvpStatsLabel: "Reception Wishes Recorded",
-        rsvpStatsSub: "Nov 15, 2026 • SMR Thirumana Mandapam",
         wishesUnitLabel: "Blessings",
         footerCouple: "Sriram & Uvasruthi",
         footerSubText: "Marriage Reception • Sunday, November 15, 2026 (6:30 PM – 9:30 PM)",
@@ -1246,13 +1168,11 @@
         navLinkSchedule: "நிகழ்ச்சி நிரல்",
         navLinkFamily: "குடும்பத்தினர்",
         navLinkVenue: "மண்டபம் & வழி",
-        navLinkRsvp: "வாழ்த்துக்கள்",
         petalBtnLabel: "மலர் தூவுக",
         musicBtnLabel: "வயலின் & இசை",
         lightLampBtnLabel: "வயலின் இசை",
         heroBadge: "திருமண வரவேற்பு அழைப்பிதழ்",
         heroCoupleNames: 'ஸ்ரீராம் <span class="text-gold-400 font-normal">&amp;</span> யுவஸ்ருதி',
-        heroCredentials: "R. ஸ்ரீராம் B.E., M.S. (France) — StålFe SAS - Paris  •  M.S. யுவஸ்ருதி BAMS (Ayu)",
         heroEventLabel: "ஞாயிற்றுக்கிழமை மாலை வரவேற்பு",
         heroDateText: "15 நவம்பர் 2026 (ஞாயிற்றுக்கிழமை)",
         heroTimeText: "மாலை 6.30 மணி முதல் 9.30 மணி வரை (மாப்பிள்ளை அழைப்பு: மாலை 6.00 மணி)",
@@ -1339,18 +1259,8 @@
         copyShareBtnLabel: "WhatsApp அழைப்புச் செய்தியை நகலெடுக்க",
         qrHeaderLabel: "வழித்தடத்திற்கு ஸ்கேன் செய்யவும் (SCAN FOR LOCATION)",
         qrSubNote: "அழைப்பிதழில் உள்ள அதிகாரப்பூர்வ QR குறியீடு • நேரடி Google Maps இணைப்பு",
-        rsvpSectionTag: "வருகைப் பதிவு மற்றும் மணமக்கள் வாழ்த்து",
-        rsvpSectionTitle: "உங்கள் வருகையையும் வாழ்த்துக்களையும் பகிருங்கள்",
-        rsvpSectionSub: "நவம்பர் 15 திருமண வரவேற்பு விழாவில் பங்கேற்பதை உறுதி செய்து மணமக்களுக்கு உங்கள் வாழ்த்துக்களைத் தெரிவிக்கலாம்",
-        rsvpFormHeading: "வரவேற்பு வருகைப் பதிவு & வாழ்த்துப் படிவம்",
         labelGuestName: "உங்கள் பெயர் மற்றும் குடும்பம் *",
-        labelGuestCount: "வருகை தருவோர் எண்ணிக்கை",
-        labelGuestSide: "அழைப்பு வழி",
-        labelArrivalTime: "நவம்பர் 15 மாலை வருகை நேரம்",
         labelGuestWish: "மணமக்களுக்கான வாழ்த்துச் செய்தி *",
-        rsvpSubmitBtn: "✨ வருகை மற்றும் வாழ்த்தைப் பதிவு செய்க",
-        rsvpStatsLabel: "பதிவான வாழ்த்துக்கள்",
-        rsvpStatsSub: "15.11.2026 • SMR திருமண மண்டபம், கோவை",
         wishesUnitLabel: "வாழ்த்துக்கள்",
         footerCouple: "ஸ்ரீராம் & யுவஸ்ருதி",
         footerSubText: "திருமண வரவேற்பு விழா • 15.11.2026 ஞாயிற்றுக்கிழமை (மாலை 6.30 – 9.30 மணி)",
@@ -1591,269 +1501,7 @@
     ];
 
     // Default initial blessings
-    const defaultWishes = [
-      {
-        id: "w1",
-        name: "Dr. V. Anandkumar & Dr. K.R. Gomathi",
-        side: "Bride's Family",
-        guests: "4",
-        arrival: "6:00 PM (Groom's Welcome)",
-        message: "Heartiest congratulations to Sriram and Uvasruthi! Looking forward to welcoming everyone at the November 15th evening reception."
-      },
-      {
-        id: "w2",
-        name: "R. Aswin (StalFe Pvt Ltd)",
-        side: "Groom's Family",
-        guests: "2",
-        arrival: "6:00 PM (Groom's Welcome)",
-        message: "இனிய திருமண வரவேற்பு நல்வாழ்த்துக்கள் ஸ்ரீராம் & யுவஸ்ருதி! வாழ்க வளமுடன்!"
-      },
-      {
-        id: "w3",
-        name: "K.R. Rangaraj & D. Sangeetha",
-        side: "Bride's Family",
-        guests: "3",
-        arrival: "6:30 PM - 7:30 PM",
-        message: "Wishing the lovely couple a joyful journey ahead. Excited to celebrate together on Sunday, November 15th at SMR Thirumana Mandapam!"
-      }
-    ];
-
-    // Application State
-    let currentLang = "en";
-    let activeFamilyFilter = "all";
-    let familySearchQuery = "";
-    let wishesList = [...defaultWishes];
-    let countdownTimerId = null;
-
-    // Load saved language or wishes safely
-    try {
-      const savedWishes = localStorage.getItem("su_reception_wishes_2026");
-      if (savedWishes) {
-        const parsed = JSON.parse(savedWishes);
-        if (Array.isArray(parsed) && parsed.length > 0) {
-          wishesList = parsed;
-        }
-      }
-    } catch (err) {
-      // Ignore storage restriction in sandboxed iframe
-    }
-
-    // Helper: Show Custom Toast
-    let toastTimeoutId = null;
-    function showToast(msg, icon = "✨") {
-      const toast = document.getElementById("toastContainer");
-      const toastMsg = document.getElementById("toastMessage");
-      const toastIcon = document.getElementById("toastIcon");
-      if (!toast || !toastMsg) return;
-      toastIcon.textContent = icon;
-      toastMsg.textContent = msg;
-      toast.classList.remove("hidden");
-      if (toastTimeoutId) clearTimeout(toastTimeoutId);
-      toastTimeoutId = setTimeout(() => {
-        toast.classList.add("hidden");
-      }, 3600);
-    }
-
-    // Helper: Copy text with fallback
-    function copyTextToClipboard(text, successMsg) {
-      if (navigator.clipboard && navigator.clipboard.writeText) {
-        navigator.clipboard.writeText(text).then(() => {
-          showToast(successMsg, "📋");
-        }).catch(() => {
-          fallbackCopy(text, successMsg);
-        });
-      } else {
-        fallbackCopy(text, successMsg);
-      }
-    }
-
-    function fallbackCopy(text, successMsg) {
-      const ta = document.createElement("textarea");
-      ta.value = text;
-      ta.style.position = "fixed";
-      ta.style.opacity = "0";
-      document.body.appendChild(ta);
-      ta.select();
-      try {
-        document.execCommand("copy");
-        showToast(successMsg, "📋");
-      } catch (e) {
-        showToast("Copied!", "📋");
-      }
-      document.body.removeChild(ta);
-    }
-
-    // Render Family Cards
-    function renderFamilyDirectory() {
-      const container = document.getElementById("familyGridContainer");
-      if (!container) return;
-
-      const q = familySearchQuery.trim().toLowerCase();
-      const filtered = familyGroups.filter(group => {
-        const matchesTab = activeFamilyFilter === "all" || group.side === activeFamilyFilter;
-        if (!matchesTab) return false;
-        if (!q) return true;
-        const haystack = [
-          group.titleEn,
-          group.titleTa,
-          ...group.membersEn,
-          ...group.membersTa
-        ].join(" ").toLowerCase();
-        return haystack.includes(q);
-      });
-
-      if (filtered.length === 0) {
-        container.innerHTML = `
-          <div class="col-span-full bg-ivory rounded-2xl p-8 text-center border border-gold-500/30">
-            <p class="text-sm font-semibold text-maroon-800">${currentLang === "en" ? "No matching family members found." : "தேடிய பெயர் கண்டறியப்படவில்லை."}</p>
-          </div>
-        `;
-        return;
-      }
-
-      container.innerHTML = filtered.map(group => {
-        const title = currentLang === "en" ? group.titleEn : group.titleTa;
-        const sideBadge = currentLang === "en" ? group.sideLabelEn : group.sideLabelTa;
-        const members = currentLang === "en" ? group.membersEn : group.membersTa;
-        const badgeColor = group.side === "hosts"
-          ? "bg-maroon-800 text-gold-400"
-          : group.side === "groom"
-            ? "bg-emerald-800/15 text-emerald-900 border border-emerald-800/30"
-            : "bg-gold-400/25 text-maroon-900 border border-gold-500/40";
-
-        return `
-          <div class="bg-ivory ornate-border rounded-2xl p-5 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between gap-2 mb-2">
-                <span class="text-[11px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${badgeColor}">
-                  ${sideBadge}
-                </span>
-              </div>
-              <h3 class="font-display text-xl font-bold text-maroon-900 mb-2.5">${title}</h3>
-              <ul class="space-y-1.5 text-xs sm:text-sm text-stone-700">
-                ${members.map(m => `<li class="flex items-start gap-2"><span class="text-gold-600 mt-0.5">•</span><span>${m}</span></li>`).join("")}
-              </ul>
-            </div>
-          </div>
-        `;
-      }).join("");
-    }
-
-    // Render Wishes List & Lake Como Letters Live Marquee
-    function renderWishesWall() {
-      const listEl = document.getElementById("wishesListContainer");
-      const countEl = document.getElementById("totalWishesCount");
-      const marqueeEl = document.getElementById("liveWishesMarquee");
-      if (!listEl || !countEl) return;
-
-      countEl.textContent = String(wishesList.length);
-      listEl.innerHTML = wishesList.map(item => `
-        <div class="bg-ivory rounded-2xl p-4 border border-gold-500/40 shadow-sm">
-          <div class="flex items-start justify-between gap-2">
-            <div>
-              <div class="flex items-center gap-2 flex-wrap">
-                <h4 class="font-bold text-sm text-maroon-900">${escapeHtml(item.name)}</h4>
-                ${item.status ? `<span class="text-[10px] font-semibold bg-gold-400/25 text-maroon-900 px-2 py-0.5 rounded-full border border-gold-500/30">${escapeHtml(item.status)}</span>` : ""}
-              </div>
-              <p class="text-[11px] text-stone-500 mt-0.5">${escapeHtml(item.side)} • ${escapeHtml(item.guests)} ${currentLang === "en" ? "Guest(s)" : "நபர்கள்"} • ${escapeHtml(item.arrival)}</p>
-            </div>
-            <span class="text-sm">🙏</span>
-          </div>
-          <p class="text-xs sm:text-sm text-stone-700 mt-2 italic">"${escapeHtml(item.message)}"</p>
-        </div>
-      `).join("");
-
-      if (marqueeEl) {
-        const marqueeItems = [...wishesList, ...wishesList];
-        marqueeEl.innerHTML = marqueeItems.map(item => `
-          <div class="inline-flex items-center gap-2 bg-ivory px-3 py-1.5 rounded-full border border-gold-500/30 shadow-sm shrink-0">
-            <span class="font-bold text-maroon-900">${escapeHtml(item.name)}:</span>
-            <span class="italic text-stone-600 max-w-[220px] truncate">"${escapeHtml(item.message)}"</span>
-          </div>
-        `).join("");
-      }
-    }
-
-    function escapeHtml(str) {
-      return String(str || "")
-        .replace(/&/g, "&amp;")
-        .replace(/</g, "&lt;")
-        .replace(/>/g, "&gt;")
-        .replace(/"/g, "&quot;");
-    }
-
-    // Apply Language to All Elements
-    function applyLanguage(lang) {
-      currentLang = lang;
-      document.documentElement.lang = lang;
-      const dict = i18n[lang];
-
-      // Update button active states
-      const enBtn = document.getElementById("langEnBtn");
-      const taBtn = document.getElementById("langTaBtn");
-      if (lang === "en") {
-        enBtn.className = "px-3 py-1 rounded-full text-xs sm:text-sm font-semibold transition-all bg-maroon-800 text-ivory shadow-sm";
-        taBtn.className = "px-3 py-1 rounded-full text-xs sm:text-sm font-semibold transition-all text-maroon-900 hover:bg-maroon-800/10 font-tamil";
-      } else {
-        taBtn.className = "px-3 py-1 rounded-full text-xs sm:text-sm font-semibold transition-all bg-maroon-800 text-ivory shadow-sm font-tamil";
-        enBtn.className = "px-3 py-1 rounded-full text-xs sm:text-sm font-semibold transition-all text-maroon-900 hover:bg-maroon-800/10";
-      }
-
-      // HTML content keys
-      const htmlKeys = [
-        "heroCoupleNames",
-        "invBodyParagraph",
-        "groomFullName",
-        "groomParentsDetail",
-        "groomPatGrandDetail",
-        "groomMatGrandDetail",
-        "brideFullName",
-        "brideParentsDetail",
-        "bridePatGrandDetail",
-        "brideMatGrandDetail"
-      ];
-
-      Object.keys(dict).forEach(key => {
-        const el = document.getElementById(key);
-        if (!el) return;
-        if (htmlKeys.includes(key)) {
-          el.innerHTML = dict[key];
-        } else {
-          el.textContent = dict[key];
-        }
-      });
-
-      // Also update mobile nav links
-      const mobMap = {
-        mobLinkInvite: dict.navLinkInvite,
-        mobLinkCouple: dict.navLinkCouple,
-        mobLinkSchedule: dict.navLinkSchedule,
-        mobLinkFamily: dict.navLinkFamily,
-        mobLinkVenue: dict.navLinkVenue,
-        mobLinkRsvp: dict.navLinkRsvp
-      };
-      Object.keys(mobMap).forEach(id => {
-        const el = document.getElementById(id);
-        if (el) el.textContent = mobMap[id];
-      });
-
-      // Update family filter tab labels
-      const tabLabels = {
-        all: `${dict.tabAll} (${familyGroups.length})`,
-        groom: dict.tabGroom,
-        bride: dict.tabBride,
-        hosts: dict.tabHosts
-      };
-      document.querySelectorAll(".fam-tab-btn").forEach(btn => {
-        const f = btn.getAttribute("data-fam-filter");
-        if (tabLabels[f]) btn.textContent = tabLabels[f];
-      });
-
-      const searchInput = document.getElementById("familySearchInput");
-      if (searchInput) searchInput.placeholder = dict.searchPlaceholder;
-
-      renderFamilyDirectory();
-      renderWishesWall();
+    // RSVP and Wishes section removed as requested
     }
 
     // Countdown Timer to Nov 15, 2026 18:30:00 IST
@@ -1956,23 +1604,24 @@
         });
       });
 
-      // Enclosed Bellagio & Violin Background Audio + Synthesized Violin Harmonic Layer
+      // Enclosed Bellagio & Violin Background Audio — Default ON, Click to OFF
       const bgAudio = document.getElementById("bgMusicAudio");
       const musicToggleBtn = document.getElementById("musicToggleBtn");
       const floatingMusicToggleBtn = document.getElementById("floatingMusicToggleBtn");
-      const floatingViolinSoloBtn = document.getElementById("floatingViolinSoloBtn");
       const playFullBellagioBtn = document.getElementById("playFullBellagioBtn");
-      const playViolinSoloCardBtn = document.getElementById("playViolinSoloCardBtn");
       const lightLampBtn = document.getElementById("lightLampBtn");
+      const floatingViolinSoloBtn = document.getElementById("floatingViolinSoloBtn");
+      const playViolinSoloCardBtn = document.getElementById("playViolinSoloCardBtn");
 
       let audioCtx = null;
-      let isMusicPlaying = false;
+      let isMusicPlaying = true; // Default ON as requested
+      let userExplicitlyTurnedMusicOff = false;
       let violinLoopIntervalId = null;
-      // Expressive Violin String notes (D major / Hamsadhwani romantic phrasing)
-      const violinNotes = [293.66, 369.99, 440.00, 554.37, 587.33, 659.25, 587.33, 440.00];
       let violinNoteIdx = 0;
+      const violinNotes = [440, 554.37, 659.25, 880, 659.25, 554.37]; // A4, C#5, E5, A5 violin arpeggio
 
-      function playSoftViolinBow(freq) {
+      function playSoftViolinBow(freq = 440) {
+        if (userExplicitlyTurnedMusicOff || !isMusicPlaying) return;
         const AudioContextClass = window.AudioContext || window.webkitAudioContext;
         if (!AudioContextClass) return;
         if (!audioCtx) audioCtx = new AudioContextClass();
@@ -1984,7 +1633,6 @@
         const filter = audioCtx.createBiquadFilter();
         const gain = audioCtx.createGain();
 
-        // Warm bowed violin timbre (sawtooth + triangle with lowpass resonance and vibrato)
         osc1.type = "sawtooth";
         osc2.type = "triangle";
         osc1.frequency.setValueAtTime(freq, now);
@@ -2016,20 +1664,34 @@
 
         if (isMusicPlaying) {
           if (iconEl) iconEl.textContent = "🎻";
-          if (musicToggleBtn) musicToggleBtn.classList.add("bg-gold-400/30", "border-gold-500");
-          if (floatIcon) floatIcon.textContent = "🎶";
-          if (floatStatus) floatStatus.textContent = modeLabel || (currentLang === "en" ? "Playing Violin & Music" : "வயலின் இசை ஒலிக்கிறது");
+          if (musicToggleBtn) {
+            musicToggleBtn.classList.add("bg-gold-400/30", "border-gold-500");
+            musicToggleBtn.classList.remove("opacity-70");
+          }
+          if (floatIcon) {
+            floatIcon.textContent = "🎻";
+            floatIcon.className = "text-sm sm:text-base animate-bounce";
+          }
+          if (floatStatus) floatStatus.textContent = modeLabel || (currentLang === "en" ? "Music is ON (Tap to Mute)" : "இசை ஒலிக்கிறது (நிறுத்த கிளிக்)");
           if (badgeEl) badgeEl.textContent = modeLabel || "Playing Now";
         } else {
-          if (iconEl) iconEl.textContent = "🎵";
-          if (musicToggleBtn) musicToggleBtn.classList.remove("bg-gold-400/30", "border-gold-500");
-          if (floatIcon) floatIcon.textContent = "🔇";
-          if (floatStatus) floatStatus.textContent = currentLang === "en" ? "Music Paused" : "இசை நிறுத்தப்பட்டது";
+          if (iconEl) iconEl.textContent = "🔇";
+          if (musicToggleBtn) {
+            musicToggleBtn.classList.remove("bg-gold-400/30", "border-gold-500");
+            musicToggleBtn.classList.add("opacity-70");
+          }
+          if (floatIcon) {
+            floatIcon.textContent = "🔇";
+            floatIcon.className = "text-sm sm:text-base";
+          }
+          if (floatStatus) floatStatus.textContent = currentLang === "en" ? "Music OFF (Click to Play)" : "இசை முடக்கப்பட்டது";
           if (badgeEl) badgeEl.textContent = "Paused";
         }
       }
 
       function startBackgroundMusic(jumpToViolinSolo = false) {
+        if (userExplicitlyTurnedMusicOff) return;
+        isMusicPlaying = true;
         if (violinLoopIntervalId) {
           clearInterval(violinLoopIntervalId);
           violinLoopIntervalId = null;
@@ -2038,7 +1700,7 @@
           bgAudio.volume = 0.85;
           if (jumpToViolinSolo) {
             try {
-              bgAudio.currentTime = 133; // 02:13 where the emotional Violin Solo enters in Bellagio.mp3
+              bgAudio.currentTime = 133;
             } catch (e) {}
           }
           const playPromise = bgAudio.play();
@@ -2047,19 +1709,17 @@
               isMusicPlaying = true;
               syncMusicUI(jumpToViolinSolo ? "🎻 Violin Solo (2:13)" : "🎵 Bellagio & Violin");
             }).catch(() => {
-              // Fallback to Web Audio Violin if browser blocks HTML5 audio before direct click
+              // If browser policy delays unmuted audio until user gesture
               isMusicPlaying = true;
               playSoftViolinBow(violinNotes[0]);
-              syncMusicUI("🎻 Ambient Violin");
+              syncMusicUI("🎻 Ambient Violin (Tap Screen)");
             });
           }
         }
-        // Subtle bowed violin harmonic accompaniment
         playSoftViolinBow(violinNotes[violinNoteIdx % violinNotes.length]);
         violinLoopIntervalId = setInterval(() => {
-          if (!isMusicPlaying) return;
+          if (!isMusicPlaying || userExplicitlyTurnedMusicOff) return;
           violinNoteIdx = (violinNoteIdx + 1) % violinNotes.length;
-          // Play gentle harmonic violin swell if audio element is paused or during soft passages
           if (!bgAudio || bgAudio.paused) {
             playSoftViolinBow(violinNotes[violinNoteIdx]);
           }
@@ -2068,7 +1728,9 @@
 
       function stopBackgroundMusic() {
         isMusicPlaying = false;
-        if (bgAudio) bgAudio.pause();
+        if (bgAudio) {
+          try { bgAudio.pause(); } catch(e) {}
+        }
         if (violinLoopIntervalId) {
           clearInterval(violinLoopIntervalId);
           violinLoopIntervalId = null;
@@ -2078,15 +1740,17 @@
 
       function toggleBackgroundMusic() {
         if (isMusicPlaying) {
+          userExplicitlyTurnedMusicOff = true;
           stopBackgroundMusic();
           showToast(
-            currentLang === "en" ? "Background music & violin paused" : "பின்னணி வயலின் இசை நிறுத்தப்பட்டது",
+            currentLang === "en" ? "Music turned OFF (Click button to resume)" : "இசை நிறுத்தப்பட்டது",
             "🔇"
           );
         } else {
+          userExplicitlyTurnedMusicOff = false;
           startBackgroundMusic(false);
           showToast(
-            currentLang === "en" ? "Playing enclosed Bellagio & Violin background music!" : "இனிய வயலின் & மங்கள இசை ஒலிக்கிறது!",
+            currentLang === "en" ? "Playing Bellagio & Violin music!" : "இனிய மங்கள இசை ஒலிக்கிறது!",
             "🎻"
           );
         }
@@ -2096,6 +1760,7 @@
         if (ev && ev.clientX) {
           spawnBurstParticles(ev.clientX, ev.clientY);
         }
+        userExplicitlyTurnedMusicOff = false;
         startBackgroundMusic(true);
         showToast(
           currentLang === "en"
@@ -2109,16 +1774,28 @@
       if (floatingMusicToggleBtn) floatingMusicToggleBtn.addEventListener("click", toggleBackgroundMusic);
       if (playFullBellagioBtn) {
         playFullBellagioBtn.addEventListener("click", () => {
+          userExplicitlyTurnedMusicOff = false;
           if (bgAudio) {
             try { bgAudio.currentTime = 0; } catch (e) {}
           }
           startBackgroundMusic(false);
-          showToast("🎵 Playing full Bellagio Wedding Invitation track!", "🎵");
+          showToast("🎵 Playing full Bellagio Wedding track!", "🎵");
         });
       }
       if (lightLampBtn) lightLampBtn.addEventListener("click", playViolinSoloHighlight);
       if (floatingViolinSoloBtn) floatingViolinSoloBtn.addEventListener("click", playViolinSoloHighlight);
       if (playViolinSoloCardBtn) playViolinSoloCardBtn.addEventListener("click", playViolinSoloHighlight);
+
+      // Default ON: Auto-start immediately and unlock on mobile touch/scroll
+      startBackgroundMusic(false);
+      const unlockMobileAudio = () => {
+        if (!userExplicitlyTurnedMusicOff && (!bgAudio || bgAudio.paused || !isMusicPlaying)) {
+          startBackgroundMusic(false);
+        }
+      };
+      ["click", "touchstart", "touchend", "scroll"].forEach(evt => {
+        window.addEventListener(evt, unlockMobileAudio, { passive: true });
+      });
 
       // Lake Como Letters Wax-Seal Envelope Open & Auto-Open
       const curtainOverlay = document.getElementById("curtainOverlay");
@@ -2129,9 +1806,7 @@
         curtainOverlay.classList.add("curtain-open");
         if (openCurtainBtn) openCurtainBtn.style.opacity = "0";
         if (envelopeCardCenter) envelopeCardCenter.style.opacity = "0";
-        if (fromUserClick) {
-          startBackgroundMusic(false);
-        }
+        startBackgroundMusic(false);
         setTimeout(() => {
           curtainOverlay.style.display = "none";
         }, 1200);
@@ -2459,57 +2134,7 @@
         );
       });
 
-      // Lake Como Letters RSVP Choice Buttons & Form Submission
-      let selectedRsvpStatus = "Yes, Joyfully Attending";
-      document.querySelectorAll(".rsvp-choice-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-          selectedRsvpStatus = btn.getAttribute("data-rsvp-status") || "Yes, Joyfully Attending";
-          document.querySelectorAll(".rsvp-choice-btn").forEach(b => {
-            if (b.getAttribute("data-rsvp-status") === selectedRsvpStatus) {
-              b.className = "rsvp-choice-btn p-2.5 rounded-xl border-2 border-maroon-800 bg-maroon-800 text-ivory text-left transition-all";
-            } else {
-              b.className = "rsvp-choice-btn p-2.5 rounded-xl border border-gold-500/40 bg-parchment text-maroon-900 hover:bg-gold-400/20 text-left transition-all";
-            }
-          });
-        });
-      });
-
-      const rsvpForm = document.getElementById("rsvpForm");
-      rsvpForm.addEventListener("submit", e => {
-        e.preventDefault();
-        const nameVal = document.getElementById("guestNameInput").value.trim();
-        const countVal = document.getElementById("guestCountSelect").value;
-        const sideVal = document.getElementById("guestSideSelect").value;
-        const arrivalVal = document.getElementById("arrivalWindowSelect").value;
-        const wishVal = document.getElementById("guestWishInput").value.trim();
-        if (!nameVal || !wishVal) return;
-
-        const newEntry = {
-          id: "w_" + Date.now(),
-          name: nameVal,
-          guests: countVal,
-          side: sideVal,
-          arrival: arrivalVal,
-          status: selectedRsvpStatus,
-          message: wishVal
-        };
-        wishesList.unshift(newEntry);
-        try {
-          localStorage.setItem("su_reception_wishes_2026", JSON.stringify(wishesList));
-        } catch (err) {
-          // Ignore storage error in restricted iframe
-        }
-
-        rsvpForm.reset();
-        renderWishesWall();
-        triggerFlowerShower();
-        showToast(
-          currentLang === "en"
-            ? `Thank you, ${nameVal}! Your RSVP & blessing for Nov 15 have been recorded.`
-            : `நன்றி ${nameVal}! உங்கள் வருகையும் வாழ்த்தும் பதிவு செய்யப்பட்டன.`,
-          "🙏"
-        );
-      });
+      
 
       // Initial Render (English Default)
       applyLanguage("en");
